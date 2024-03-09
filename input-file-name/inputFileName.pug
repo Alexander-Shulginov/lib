@@ -1,0 +1,7 @@
+<!-- input должен быть display: none; -->
+<!-- аттрибут for элемента label должен быть уникальным для каждого id элемента input -->
+div(data-file-container)
+	label(for=`input-file-${index}`) Прикрепить файл
+	input(type="file" id=`input-file-${index}` name=`input-file-${index}` multiple)
+	button(type="submit") Отправить
+	div(data-file-name)
